@@ -14,7 +14,7 @@ class ClientController extends Controller
     {
         $client = Client::create([
             'email' => $request->get('email'),
-            'fone' => $request->get('fonet'),
+            'fone' => $request->get('fone'),
         ]);
 
         return response()->json([
